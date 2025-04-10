@@ -1,0 +1,8 @@
+public class MainApp {
+    public static void main(String[] args) {
+        StudentDAO dao = new StudentDAO();
+        dao.saveStudent(new Student("John", 22));
+        Student s = dao.getStudent(1);
+        System.out.println("Fetched: " + s.getName());
+    }
+}
